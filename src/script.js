@@ -21,7 +21,6 @@ filter.push(39);    //right arrow
 //returns a string where all occurrences of a string 'search' are replaced with another
 //string 'replace' in a string 'src'
 function replaceAll(src,search,replace){
-
   return src.split(search).join(replace);
 }
 
