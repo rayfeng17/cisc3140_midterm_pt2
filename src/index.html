@@ -5,10 +5,9 @@
     <title> Phone Field </title>
     <link rel="stylesheet" type="text/css" href="style.css" />
     <input type="text" class="phoneNumber"
-           <!-- limits the input of max length to 12 for phone number-->
            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
            type = "number"
-           maxlength = "12"> 
+           maxlength = "12"> <!-- this limits the input of max length to 12 for phone number-->
     <script src="script.js"></script>
 </head>
 <body>
