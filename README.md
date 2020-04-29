@@ -3,7 +3,7 @@
 Objectives: 
 The objective is to create an input mask that formats telephone numbers in real-time.
 
-It should present a user entered phone number xxxxxxxx as something like xxx-xxx-xxxx. Note: Choosing the - here as it is slightly easier to implement than with () characters for (XXX) XXX - XXXX. We will assume US phone numbers to keep it simple. The presented example uses Brooklyn College's phone number, 718-951-5000
+It should present a user entered phone number xxxxxxxx as something like xxx-xxx-xxxx. Note: Choosing the - here as it is slightly easier to implement than with () characters for (XXX) XXX - XXXX. We will assume US phone numbers to keep it simple.
 
 The user will be entering in 1 key at a time.
 
