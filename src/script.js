@@ -43,8 +43,7 @@ function validatePhone(p){
   return phoneInput.test(digits);
 }
 
-// when a key is pressed down, check if it is allowed or not
-// only numbers are allowed
+// when a key is pressed, check if it is allowed or not
 function KeyPressed(e){
   if(textbox.indexOf(e.keyCode) < 0){
     e.preventDefault();
