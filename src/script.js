@@ -44,7 +44,7 @@ function validatePhone(p){
 }
 
 // when a key is pressed, check if it is allowed or not
-function KeyPressed(e){
+function keyPressed(e){
   if(textbox.indexOf(e.keyCode) < 0){
     e.preventDefault();
 
@@ -54,7 +54,7 @@ function KeyPressed(e){
 
 // record the contents in the input field, format in XXX-XXX-XXXX
 // validate if the text is filled based on color of the border
-function KeyReleased(e){
+function keyReleased(e){
   var input = e.target;
   var formatted = formatPhoneText(input.value);
   var isError = (validatePhone(formatted) || formatted.length == 0);
@@ -72,8 +72,8 @@ function setupPhoneField(className){
     var input = inPhoneField[i];
     if(input.type.toLowerCase() == "text"){
       input.placeholder = "Enter a phone (XXX-XXX-XXXX)";
-      input.addEventListener("keydown", KeyPressed);
-      input.addEventListener("keyup", KeyReleased);
+      input.addEventListener("keydown", keyPressed);
+      input.addEventListener("keyup", keyReleased);
     }
   }
 }
