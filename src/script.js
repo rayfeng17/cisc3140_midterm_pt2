@@ -27,6 +27,8 @@ function replaceAll(src,search,replace){
 // returns a string that is in XXX-XXX-XXXX format
 function formatPhoneText(value){
   value = this.replaceAll(value.trim(),"-","");
+  value = this.replaceAll(value.trim(),"(","");
+  value = this.replaceAll(value.trim(),")","");
   if(value.length > 3 && value.length <= 6)
     value = value.slice(0,3) + "-" + value.slice(3);
   else if(value.length > 6)
