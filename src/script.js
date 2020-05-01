@@ -78,7 +78,7 @@ function keyReleased(e){
   input.value = formatted;
 }
 
-// field with the specified 'className' to work like phone number input fields
+// specified field 'className' to work like phone number input fields
 function setupPhoneField(className){
   var inPhoneField = document.getElementsByClassName(className);
   for(var i=0; i < inPhoneField.length; i++){
